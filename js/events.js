@@ -12,7 +12,9 @@ function frameIt(){
 }
 
 function pressIt(){
- 
+ $("#typing").keydown(function(){
+    
+});
 }
 
 function submitIt(){
