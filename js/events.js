@@ -12,9 +12,10 @@ function frameIt(){
 }
 
 function pressIt(){
-  $("input").keydown(function(key){
-    if(key.which=='G')
-    alert("G was pressed");
+  $("input").on('keydown', function(key) {
+  if(key.which == 'G'){
+      alert('G was pressed');
+  }
 });
 }
 
@@ -33,7 +34,7 @@ $(document).ready(function(){
 // call functions here
 getIt();
 frameIt();
-//pressIt();
+pressIt();
 //submitIt();
 
 });
